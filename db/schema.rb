@@ -28,10 +28,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_12_183807) do
   create_table "reviews", force: :cascade do |t|
     t.string "author"
     t.string "comment"
-    t.bigint "books_id"
+    t.bigint "book_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["books_id"], name: "index_reviews_on_books_id"
+    t.index ["book_id"], name: "index_reviews_on_book_id"
   end
 
 end
